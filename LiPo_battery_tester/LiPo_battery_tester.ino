@@ -12,7 +12,7 @@ void setup()
 void loop() {
   // Get the analog voltage converted to units (~ 0V - 5V ==> 0 - 1023 units)
   // For example, 4.12V is 905 units while the Arduino Nano is powered from USB
-  // I need to recalibrate the voltages when the device is operated from battery
+  // The voltages need to be recalibrated when the device is operated from battery
   int reading = analogRead(0);
 
   // Print reading to the serial port
