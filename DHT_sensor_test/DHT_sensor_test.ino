@@ -1,12 +1,15 @@
-#include "DHT.h"              // Include the DHT temperature and humidity sensor library
-#define DHTPIN 2              // Select the pin that the sensor is connected to
-#define DHTTYPE DHT11         // Select the type of the sensor
+/* This is a simple application to test the DHT sensor connected to the Arduino board.
+ */
+
+#include <DHT.h>              // Include the DHT temperature and humidity sensor library
+#define DHTPIN 2              // Define the pin that the sensor is connected to
+#define DHTTYPE DHT11         // Define the type of sensor
 DHT dht(DHTPIN, DHTTYPE);     // Create an instance of the DHT object
 
 
 void setup()
 {
-  Serial.begin(9600);         // Start the serail port for debug
+  Serial.begin(9600);         // Open the serail port for debug
   dht.begin();                // Start the temperature sensor
 }
 

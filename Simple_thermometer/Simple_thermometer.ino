@@ -20,7 +20,7 @@ DHT dht(DHTPIN, DHTTYPE);         // Create an instance of the DHT object
 
 void setup()
 {
-  Serial.begin(9600);             // Open serial port for debug
+  Serial.begin(9600);             // Open the serial port for debug
   dht.begin();                    // Start the temperature sensor
   
   // Test if the memory allocation for image buffer fails
@@ -51,7 +51,7 @@ void loop()
   
   display.println("Temperature:");
 
-  // If the temperature reading is incorrect
+  // If the temperature reading is incorrect or missing
   if (isnan(temperature))
   {
     display.println("N/A");
@@ -65,7 +65,7 @@ void loop()
   
   display.println("Humidity:");
   
-  // If the humidity reading is incorrect
+  // If the humidity reading is incorrect or missing
   if (isnan(humidity))
   {
     display.println("N/A");

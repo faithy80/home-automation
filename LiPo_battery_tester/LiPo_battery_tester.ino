@@ -1,4 +1,4 @@
-/* This is a simple tester application to determine the voltage the connected LiPo battery
+/* This is a simple tester application to determine the voltage of the connected LiPo battery.
  */
 
 #define LiPo_pin A0               // Define the battery measuring pin
@@ -6,7 +6,7 @@
 void setup()
 {
   pinMode(LiPo_pin, INPUT);       // Set the measuring pin to input
-  Serial.begin(9600);             // Open the srial port for debug
+  Serial.begin(9600);             // Open the serial port for debug
 }
 
 void loop() {
