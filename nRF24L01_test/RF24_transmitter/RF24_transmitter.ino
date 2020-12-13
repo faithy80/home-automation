@@ -1,3 +1,6 @@
+/* This application is a test of the nRF24L01 wireless radio device. This code is for the transmitter side.
+ */
+
 #include <SPI.h>                                          // Include the SPI communication protocol library
 #include <nRF24L01.h>                                     // Include the nRF24L01 transciever library
 #include <RF24.h>                                         // Include the RF24 radio driver library
